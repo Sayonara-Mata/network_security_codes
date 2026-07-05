@@ -88,7 +88,7 @@ int main()
   char filter_exp[] = "tcp";
   bpf_u_int32 net;
 
-  // Step 1: Open live pcap session on NIC with name enp0s3
+  // Step 1: Open live pcap session on NIC with name eth0
   handle = pcap_open_live("eth0", BUFSIZ, 1, 1000, errbuf);
 
   if (handle == NULL) {
